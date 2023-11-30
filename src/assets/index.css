@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #217BF4;
+    --text-para: #656464;
+}
+body{
+    font-weight: 400;
+}
+
+.header {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 1) 15%, rgba(222, 236, 254, 1) 100%);
+}
+
+.nav .active {
+    color: #2B2B39;
+    font-weight: 600;
+}
+
+.nav a {
+    color: #656464;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    opacity: 80%;
+    transition: 1s ease-in-out;
+}
+
+.border-light {
+    border-color: #E5E5E5;
+}
+
+.search_input::placeholder {
+    color: #686868;
+    opacity: 1;
+    /* Firefox */
+}
+.paragraph{
+    color: var(--text-para);
+}
+.bg-transparent {
+    background-color: transparent;
+}
+
+@layer components {
+    .btn_primary {
+        @apply bg-primary px-10 py-3.5 rounded-xl text-xs text-white hover:bg-opacity-70 transition
+    }
+    
+}
