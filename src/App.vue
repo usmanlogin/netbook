@@ -4,7 +4,7 @@
       <div class="max-w-6xl mx-auto py-4 px-4 sm:px-8">
 
         <div class="grid grid-cols-5 w-full ">
-          <div class="col-span-4 sm:col-span-3 flex space-x-16">
+          <div class="col-span-4 sm:col-span-4 md:col-span-3 flex space-x-16">
 
             <div class="self-center">
               <img src="@/assets/images/logo.svg" class="self-center">
@@ -29,7 +29,7 @@
             <button class="btn_primary"> Log in</button>
           </div>
 
-          <div class="col-span-1 sm:hidden  self-center flex justify-end">
+          <div class="col-span-1 md:hidden  self-center flex justify-end">
             <button class="btn_primary px-2 py-2 rounded bg-transparent border border-primary text-primary self-center"
               @click="state.show_menu = !state.show_menu">Menu</button>
             <div class="w-full absolute left-0 mx-auto top-20 bg-white z-10" v-if="state.show_menu">
@@ -81,7 +81,7 @@
         </div>
 
         <div class="hidden sm:flex sm:col-span-3 flex justify-end animate__animated animate__fadeInRight">
-          <img src="@/assets/images/group.svg" class="self-center  w-[90%] h-auto object-right">
+          <img src="@/assets/images/group.svg" class="self-center  h-auto w-auto  object-right">
         </div>
       </div>
     </div>
