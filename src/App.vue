@@ -29,10 +29,10 @@
             <button class="btn_primary"> Log in</button>
           </div>
 
-          <div class="col-span-1 sm:hidden  self-center ">
+          <div class="col-span-1 sm:hidden  self-center flex justify-end">
             <button class="btn_primary px-2 py-2 rounded bg-transparent border border-primary text-primary self-center"
               @click="state.show_menu = !state.show_menu">Menu</button>
-            <div class="w-full absolute left-0 mx-auto top-20 " v-if="state.show_menu">
+            <div class="w-full absolute left-0 mx-auto top-20 bg-white z-10" v-if="state.show_menu">
               <div class="space-y-4 bg-white p-3 border border-primary border-opacity-10 rounded -mt-3 shadow">
                 <ul class="nav ">
                   <li class="my-2"><a href="#" class="active py-2">Home</a></li>
